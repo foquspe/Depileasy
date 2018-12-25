@@ -1,0 +1,37 @@
+// Estilos para la sección Servicios
+section.servicios {
+
+  background-color: $turquesa-50;
+  text-align: center;
+  h2{
+    color: $turquesa-500;
+  }
+  .card{
+    border: none;
+    margin-bottom: 30px;
+    border-radius:6px;
+    box-shadow: 0 20px 20px -20px rgba($gris-900,.5);
+    .card-img-overlay{
+      top:auto;
+    }
+    h3{
+      color: white;
+    }
+  }
+  @media #{$lg-screen} {
+
+        text-align: left;
+        height: 880px;
+        .card{
+          position: absolute;
+        }
+        .card-1{
+          top:180px;
+          margin-top: auto;
+        }
+        .card-2{
+          top:90px;
+        }
+      }
+
+}

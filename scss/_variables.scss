@@ -1,0 +1,35 @@
+// Variables
+
+// Brand Colors
+
+$turquesa-50:      #EFF8F9;
+$turquesa-300:     #BEE4E8;
+$turquesa-500:     #7CC8D1;
+$turquesa-900:     #4CA7B5;
+
+$gris-50:          #E9E9EA;
+$gris-300:         #A1A5A6;
+$gris-500:         #45474D;
+$gris-900:         #1F2225;
+
+// Theme Colors
+
+$theme-primary:    $turquesa-500;
+$theme-secondary:  $gris-500;
+
+$gray-base:        #000;
+$gray-darker:      lighten($gray-base, 13.5%); // #222
+$gray-dark:        lighten($gray-base, 20%);   // #333
+$gray:             lighten($gray-base, 33.5%); // #555
+$gray-light:       lighten($gray-base, 46.7%); // #777
+$gray-lighter:     lighten($gray-base, 93.5%); // #eee
+
+$brand-twitter:		 #1da1f2;
+$brand-facebook:	 #3b5998;
+$brand-google-plus:#dd4b39;
+
+// Media Queries
+
+$sm-screen:"(max-width: 767px)";
+$md-screen:"(min-width: 768px) and (max-width: 991px)";
+$lg-screen:"(min-width: 992px)";

@@ -1,0 +1,76 @@
+// Styling for the call to action section
+section.club {
+    background-color: $turquesa-300;
+    position: relative;
+    height: 100vh;
+    padding: auto 0;
+    img{
+      width: 240px;
+    }
+    .carousel{
+      width: 100%;
+    }
+    .carousel-item{
+      text-align: center;
+    }
+    .btn-outline{
+      border-color:$turquesa-500;
+      color: $turquesa-900;
+    }
+
+    #carouselEstrellas{
+      height: 540px;
+    }
+
+    h2{
+      color: $turquesa-900;
+
+    }
+
+    .tarjetas{
+      display: inherit;
+    }
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li{
+      line-height: 1.6em;
+    }
+    li.muted{
+      border-top:1px solid $turquesa-500;
+      margin-top: 5px;
+      padding-top: 4px;
+    }
+
+    @media#{$lg-screen} {
+      h2{
+        padding-top: 80px;
+      }
+      .carousel{
+        img{
+          width: 100%;
+        }
+        .carousel-item{
+          text-align: left;
+        }
+
+      }
+    }
+
+}
+
+
+.decoracion{
+  position: relative;
+  .petalos{
+    position: absolute;
+    width: 100%;
+    background: url('../img/img-petalos-1.png');
+    @include background-cover;
+    height: 346px;
+    top: -140px;
+  }
+}

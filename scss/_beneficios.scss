@@ -1,0 +1,47 @@
+// Styling for the features section
+section.beneficios {
+    background-color: $turquesa-50;
+    position: relative;
+    padding: auto 0;
+    img{
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        margin-top: 0;
+        color: $theme-primary;
+    }
+    p {
+        margin-bottom: 60px;
+        color: $theme-secondary;
+    }
+    .section-heading {
+
+        margin-top: 120px;
+
+
+    }
+    .beneficios-items {
+        p{
+          color: $gris-300;
+        }
+    }
+
+    @media #{$lg-screen} {
+      .carousel{
+        img{
+          width: 100%;
+        }
+        .carousel-item{
+          text-align: left;
+        }
+
+      }
+      height: 100vh;
+      .section-heading{
+        padding-top: 60px;
+      }
+
+    }
+
+}

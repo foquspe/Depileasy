@@ -1,0 +1,82 @@
+// Styling for the download section
+section.inscripcion {
+    background: $turquesa-300 url('../img/img-petalos-2.png') no-repeat bottom right ;
+
+    img{
+      margin-bottom: 38px;
+    }
+
+    form{
+      background-color: $turquesa-500;
+      padding: 40px 60px;
+      border-radius: 8px;
+      box-shadow: 0 20px 20px -20px rgba($gris-900,.5);
+    }
+
+
+    .btn-fill{
+      background-color: $turquesa-900;
+      color: white;
+      margin-left: 5px;
+    }
+    .birthday{
+      max-width: 50px;
+      display: inline-block;
+    }
+    p.small{
+      color: $turquesa-50;
+      margin-top: 20px;
+    }
+    p.small a{
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+
+    }
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 25px;
+        color: $turquesa-900;
+        i {
+            color: $brand-google-plus;
+        }
+    }
+    ul.list-social {
+        margin-bottom: 0;
+        li {
+            a {
+                font-size: 40px;
+                line-height: 80px;
+                display: block;
+                width: 80px;
+                height: 80px;
+                color: white;
+                border-radius: 100%;
+            }
+            &.social-twitter {
+                a {
+                    background-color: $brand-twitter;
+                    &:hover {
+                        background-color: darken($brand-twitter, 5%);
+                    }
+                }
+            }
+            &.social-facebook {
+                a {
+                    background-color: $brand-facebook;
+                    &:hover {
+                        background-color: darken($brand-facebook, 5%);
+                    }
+                }
+            }
+            &.social-google-plus {
+                a {
+                    background-color: $brand-google-plus;
+                    &:hover {
+                        background-color: darken($brand-google-plus, 5%);
+                    }
+                }
+            }
+        }
+    }
+}

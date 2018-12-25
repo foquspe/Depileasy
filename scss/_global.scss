@@ -1,0 +1,91 @@
+// Global styling for this template
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    @include body-font;
+}
+
+a {
+    color: $theme-primary;
+    @include transition-all;
+    &:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+}
+
+hr {
+    max-width: 100px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    border-color: fade-out($gray-darker, .9);
+}
+
+hr.light {
+    border-color: white;
+}
+
+h1,
+h2,
+h3 {
+    @include heading-font;
+    margin-bottom: 20px;
+}
+
+h1{
+  font-size: 38px;
+  @media #{$lg-screen}{
+    font-size: 76px;
+  }
+}
+
+h2{
+  font-size: 24px;
+  @media #{$lg-screen}{
+    font-size: 47px;
+  }
+
+}
+
+h3{
+  font-size: 15px;
+  @media #{$lg-screen}{
+    font-size: 29px;
+  }
+}
+
+h4 {
+  @include body-font;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 20px;
+  @media #{$lg-screen}{
+  }
+}
+
+p.large{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+p.small {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+section {
+  padding: 80px 0;
+  @media #{$lg-screen} {
+      padding: 160px 0;
+  }
+}

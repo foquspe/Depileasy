@@ -1,0 +1,42 @@
+section#chatbot{
+  position: relative;
+  padding: 0;
+
+  h4{
+    color: white;
+  }
+  p{
+    color: $turquesa-50;
+  }
+  .chatbot-body{
+    padding:30px 20px;
+    position: absolute;
+    z-index: 1;
+    background-color: $turquesa-900;
+    border-radius: 6px;
+    box-shadow: 0 20px 20px -20px rgba($gris-900,.5);
+    top:-120px;
+  }
+
+  @media #{$md-screen}{
+      h4{
+        font-size: 18px;
+      }
+      .chatbot-body{
+
+        top:-110px;
+        }
+      img{
+        margin-bottom: 40px;
+      }
+    }
+
+  @media #{$lg-screen}{
+    h4{
+    }
+    .chatbot-body{
+      padding:40px 30px;
+      top:-110px;
+      }
+    }
+}

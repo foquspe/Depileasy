@@ -1,0 +1,28 @@
+// Styling for the masthead
+header.masthead {
+    position: relative;
+    height: 100vh;
+    color: $theme-secondary;
+    background: url('../img/header-bg.jpg');
+    @include background-cover;
+
+    .header-content {
+        text-align: center;
+        img {
+            margin-bottom: 25px;
+            margin-top: 240px;
+            width: 50%;
+        }
+    }
+
+    @media #{$lg-screen}{
+        .header-content {
+            margin-bottom: 0;
+            text-align: left;
+            img {
+                margin-bottom: 50px;
+                margin-top: 60px;
+            }
+        }
+    }
+}

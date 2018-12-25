@@ -1,0 +1,82 @@
+// Styling for the navbar
+#mainNav {
+    border-color: fade-out($gray-darker, .95);
+    background-color: $theme-primary;
+    @include transition-all;
+    @include heading-font;
+    .navbar-brand {
+        color: $turquesa-300;
+        @include heading-font;
+        &:hover,
+        &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+    .navbar-toggler {
+        @include heading-font;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        color: $turquesa-500;
+        background-color: $turquesa-300;
+        border: none;
+    }
+    .navbar-nav {
+        > li {
+            > a {
+                font-size: 14px;
+                @include heading-font;
+                &.active {
+                    color: white !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+            > a,
+            > a:focus {
+                color: $theme-secondary;
+                &:hover {
+                    color: $turquesa-300;
+                }
+            }
+        }
+    }
+    @media #{$lg-screen} {
+        border-color: transparent;
+        background-color: $turquesa-500;
+        .navbar-brand {
+            color: fade(white, 70%);
+            &:hover,
+            &:focus {
+                color: white;
+            }
+        }
+        .navbar-nav > li > a,
+        .navbar-nav > li > a:focus {
+            color: fade-out(white, .3);
+            &:hover {
+                color: white;
+            }
+        }
+        &.navbar-shrink {
+            border-color: fade-out($gray-darker, .9);
+            background-color: $theme-primary;
+            .navbar-brand {
+                color: $gray-darker;
+                &:hover,
+                &:focus {
+                    color: $theme-secondary;
+                }
+            }
+            .navbar-nav > li > a,
+            .navbar-nav > li > a:focus {
+                color: white;
+                &:hover {
+                    color: $theme-secondary;
+                }
+            }
+        }
+    }
+}

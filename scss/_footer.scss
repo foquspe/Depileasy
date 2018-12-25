@@ -1,0 +1,16 @@
+// Styling for the footer
+footer {
+    padding: 20px 0;
+    background-color: $turquesa-500;
+    p {
+        margin: 0;
+    }
+
+    a{
+      color: $gris-900;
+      font-weight: bold;
+    }
+    a:hover{
+      color: $turquesa-300;
+    }
+}

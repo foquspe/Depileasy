@@ -1,0 +1,58 @@
+// Styling for the download section
+section.presentacion {
+    background: url('../img/bg-seccion-1.png');
+    @include background-cover;
+    position: relative;
+    height: 100vh;
+    padding: auto 0;
+    margin-bottom: 120px;
+    img{
+      width: 240px;
+    }
+    .carousel{
+      width: 100%;
+
+    }
+    .carousel-item{
+      text-align: center;
+    }
+    h2 {
+        margin-top: 0;
+        color: $theme-primary;
+    }
+    mark{
+      background-color:$turquesa-300;
+    }
+    #carouselPresentacion{
+      height: 540px;
+    }
+    @media #{$md-screen} {
+
+        .carousel{
+          .carousel-item{
+            text-align: left;
+          }
+        }
+        #carouselPresentacion{
+          height: 360px;
+        }
+    }
+    @media #{$lg-screen} {
+      .carousel{
+        img{
+          width: 100%;
+        }
+        .carousel-item{
+          text-align: left;
+        }
+
+      }
+        #carouselPresentacion{
+          height: 420px;
+        }
+        .section-heading{
+          padding-top: 60px;
+        }
+    }
+
+}
