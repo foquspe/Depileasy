@@ -1,11 +1,10 @@
 // Styling for the download section
 section.presentacion {
-    background: url('../img/bg-seccion-1.png');
+    background: url('../img/bg-seccion.png') center #F8F8F8;
     @include background-cover;
     position: relative;
-    height: 100vh;
     padding: auto 0;
-    margin-bottom: 120px;
+    padding-bottom: 160px;
     img{
       width: 240px;
     }
@@ -24,7 +23,7 @@ section.presentacion {
       background-color:$turquesa-300;
     }
     #carouselPresentacion{
-      height: 540px;
+      height: 560px;
     }
     @media #{$md-screen} {
 
@@ -48,7 +47,7 @@ section.presentacion {
 
       }
         #carouselPresentacion{
-          height: 420px;
+          height: 480px;
         }
         .section-heading{
           padding-top: 60px;

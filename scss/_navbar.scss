@@ -7,6 +7,10 @@
     .navbar-brand {
         color: $turquesa-300;
         @include heading-font;
+        img{
+          width: 140px;
+          filter: brightness(5);
+        }
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);

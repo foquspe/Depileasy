@@ -2,27 +2,30 @@
 section.club {
     background-color: $turquesa-300;
     position: relative;
-    height: 100vh;
     padding: auto 0;
-    img{
-      width: 240px;
-    }
+
     .carousel{
       width: 100%;
     }
-    .carousel-item{
-      text-align: center;
-    }
+    // .carousel-item{
+    //   text-align: center;
+    // }
     .btn-outline{
       border-color:$turquesa-500;
       color: $turquesa-900;
     }
 
     #carouselEstrellas{
-      height: 540px;
+      height: 600px;
+      .carousel-indicators .active {
+          background-color: $turquesa-900;
+      }
+      .carousel-indicators li{
+          background-color: $turquesa-500;
+      }
     }
 
-    h2{
+    h2,h3{
       color: $turquesa-900;
 
     }
@@ -40,27 +43,19 @@ section.club {
       line-height: 1.6em;
     }
     li.muted{
-      border-top:1px solid $turquesa-500;
       margin-top: 5px;
       padding-top: 4px;
     }
 
     @media#{$lg-screen} {
-      h2{
-        padding-top: 80px;
+      #carouselEstrellas{
+        height: 360px;
       }
-      .carousel{
-        img{
-          width: 100%;
-        }
-        .carousel-item{
-          text-align: left;
-        }
 
       }
     }
 
-}
+
 
 
 .decoracion{
@@ -68,9 +63,9 @@ section.club {
   .petalos{
     position: absolute;
     width: 100%;
-    background: url('../img/img-petalos-1.png');
+    background: url('../img/bg-seccion.png');
     @include background-cover;
-    height: 346px;
-    top: -140px;
+    height: 580px;
+    top: -120px;
   }
 }

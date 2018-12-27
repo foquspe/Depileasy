@@ -107,7 +107,7 @@ section {
 
 @media (min-width: 992px) {
   section {
-    padding: 160px 0;
+    padding: 100px 0;
   }
 }
 
@@ -128,6 +128,12 @@ section {
   font-weight: 700;
   letter-spacing: 0.10em;
   text-transform: uppercase;
+}
+
+#mainNav .navbar-brand img {
+  width: 140px;
+  -webkit-filter: brightness(5);
+  filter: brightness(5);
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
@@ -243,12 +249,11 @@ header.masthead .header-content img {
 }
 
 section.presentacion {
-  background: url("../img/bg-seccion-1.png");
+  background: url("../img/bg-seccion.png") center #F8F8F8;
   background-size: cover;
   position: relative;
-  height: 100vh;
   padding: auto 0;
-  margin-bottom: 120px;
+  padding-bottom: 160px;
 }
 
 section.presentacion img {
@@ -273,7 +278,7 @@ section.presentacion mark {
 }
 
 section.presentacion #carouselPresentacion {
-  height: 540px;
+  height: 560px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -293,7 +298,7 @@ section.presentacion #carouselPresentacion {
     text-align: left;
   }
   section.presentacion #carouselPresentacion {
-    height: 420px;
+    height: 480px;
   }
   section.presentacion .section-heading {
     padding-top: 60px;
@@ -330,9 +335,6 @@ section.beneficios .beneficios-items p {
 }
 
 @media (min-width: 992px) {
-  section.beneficios {
-    height: 100vh;
-  }
   section.beneficios .carousel img {
     width: 100%;
   }
@@ -340,7 +342,7 @@ section.beneficios .beneficios-items p {
     text-align: left;
   }
   section.beneficios .section-heading {
-    padding-top: 60px;
+    padding-top: 0;
   }
 }
 
@@ -349,61 +351,46 @@ section#chatbot {
   padding: 0;
 }
 
-section#chatbot h4 {
-  color: white;
-}
-
-section#chatbot p {
-  color: #EFF8F9;
-}
-
 section#chatbot .chatbot-body {
   padding: 30px 20px;
-  position: absolute;
-  z-index: 1;
   background-color: #4CA7B5;
+  position: absolute;
+  margin-right: 15px;
+  top: -120px;
+  z-index: 1;
   border-radius: 6px;
   -webkit-box-shadow: 0 20px 20px -20px rgba(31, 34, 37, 0.5);
   box-shadow: 0 20px 20px -20px rgba(31, 34, 37, 0.5);
-  top: -120px;
+}
+
+section#chatbot .chatbot-body h4 {
+  color: white;
+}
+
+section#chatbot .chatbot-body p {
+  color: #EFF8F9;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  section#chatbot h4 {
+  section#chatbot .chatbot-body h4 {
     font-size: 18px;
-  }
-  section#chatbot .chatbot-body {
-    top: -110px;
-  }
-  section#chatbot img {
-    margin-bottom: 40px;
   }
 }
 
 @media (min-width: 992px) {
   section#chatbot .chatbot-body {
     padding: 40px 30px;
-    top: -110px;
   }
 }
 
 section.club {
   background-color: #BEE4E8;
   position: relative;
-  height: 100vh;
   padding: auto 0;
-}
-
-section.club img {
-  width: 240px;
 }
 
 section.club .carousel {
   width: 100%;
-}
-
-section.club .carousel-item {
-  text-align: center;
 }
 
 section.club .btn-outline {
@@ -412,10 +399,18 @@ section.club .btn-outline {
 }
 
 section.club #carouselEstrellas {
-  height: 540px;
+  height: 600px;
 }
 
-section.club h2 {
+section.club #carouselEstrellas .carousel-indicators .active {
+  background-color: #4CA7B5;
+}
+
+section.club #carouselEstrellas .carousel-indicators li {
+  background-color: #7CC8D1;
+}
+
+section.club h2, section.club h3 {
   color: #4CA7B5;
 }
 
@@ -434,20 +429,13 @@ section.club li {
 }
 
 section.club li.muted {
-  border-top: 1px solid #7CC8D1;
   margin-top: 5px;
   padding-top: 4px;
 }
 
 @media (min-width: 992px) {
-  section.club h2 {
-    padding-top: 80px;
-  }
-  section.club .carousel img {
-    width: 100%;
-  }
-  section.club .carousel .carousel-item {
-    text-align: left;
+  section.club #carouselEstrellas {
+    height: 360px;
   }
 }
 
@@ -458,10 +446,10 @@ section.club li.muted {
 .decoracion .petalos {
   position: absolute;
   width: 100%;
-  background: url("../img/img-petalos-1.png");
+  background: url("../img/bg-seccion.png");
   background-size: cover;
-  height: 346px;
-  top: -140px;
+  height: 580px;
+  top: -120px;
 }
 
 section.servicios {
@@ -475,7 +463,6 @@ section.servicios h2 {
 
 section.servicios .card {
   border: none;
-  margin-bottom: 30px;
   border-radius: 6px;
   -webkit-box-shadow: 0 20px 20px -20px rgba(31, 34, 37, 0.5);
   box-shadow: 0 20px 20px -20px rgba(31, 34, 37, 0.5);
@@ -492,7 +479,7 @@ section.servicios .card h3 {
 @media (min-width: 992px) {
   section.servicios {
     text-align: left;
-    height: 880px;
+    height: 840px;
   }
   section.servicios .card {
     position: absolute;
@@ -507,11 +494,7 @@ section.servicios .card h3 {
 }
 
 section.inscripcion {
-  background: #BEE4E8 url("../img/img-petalos-2.png") no-repeat bottom right;
-}
-
-section.inscripcion img {
-  margin-bottom: 38px;
+  background: #BEE4E8 url("../img/img-petalos.png") no-repeat bottom right;
 }
 
 section.inscripcion form {
@@ -520,6 +503,13 @@ section.inscripcion form {
   border-radius: 8px;
   -webkit-box-shadow: 0 20px 20px -20px rgba(31, 34, 37, 0.5);
   box-shadow: 0 20px 20px -20px rgba(31, 34, 37, 0.5);
+}
+
+section.inscripcion form img {
+  margin-bottom: 38px;
+  width: 140px;
+  -webkit-filter: brightness(2);
+  filter: brightness(2);
 }
 
 section.inscripcion .btn-fill {
@@ -641,16 +631,19 @@ i.icon {
 }
 
 .messenger {
-  background: url("../img/icon-messenger.png");
+  background: url("../img/icon-messenger.svg");
   height: 16px;
   width: 16px;
   margin-left: 4px;
 }
 
 .foqus {
-  background: url("../img/icon-foqus.png");
+  background: url("../img/icon-foqus.svg");
   height: 16px;
   width: 16px;
+  -webkit-filter: brightness(0.1);
+  filter: brightness(0.1);
+  margin-bottom: 3px;
 }
 
 .btn {
@@ -683,10 +676,6 @@ label {
   text-transform: uppercase;
   font-size: 14px;
   color: #EFF8F9;
-}
-
-.carousel {
-  height: 440px;
 }
 
 .carousel-control-prev-icon,
@@ -724,4 +713,8 @@ label {
 
 .carousel-indicators li {
   background-color: #BEE4E8;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  min-height: 0px;
 }

@@ -1,16 +1,19 @@
 // Styling for the download section
 section.inscripcion {
-    background: $turquesa-300 url('../img/img-petalos-2.png') no-repeat bottom right ;
+    background: $turquesa-300 url('../img/img-petalos.png') no-repeat bottom right ;
 
-    img{
-      margin-bottom: 38px;
-    }
+
 
     form{
       background-color: $turquesa-500;
       padding: 40px 60px;
       border-radius: 8px;
       box-shadow: 0 20px 20px -20px rgba($gris-900,.5);
+      img{
+        margin-bottom: 38px;
+        width: 140px;
+        filter: brightness(2);
+      }
     }
 
 
