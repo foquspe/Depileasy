@@ -1,69 +1,35 @@
 // Styling for the call to action section
 section.club {
     background-color: $turquesa-300;
-    position: relative;
-    padding: auto 0;
 
-    .carousel{
-      width: 100%;
-    }
-    // .carousel-item{
-    //   text-align: center;
-    // }
-    .btn-outline{
-      border-color:$turquesa-500;
-      color: $turquesa-900;
-    }
-
-    #carouselEstrellas{
-      height: 600px;
-      .carousel-indicators .active {
-          background-color: $turquesa-900;
-      }
-      .carousel-indicators li{
-          background-color: $turquesa-500;
-      }
+    mark{
+      background-color: $turquesa-500;
     }
 
     h2,h3{
       color: $turquesa-900;
-
     }
 
-    .tarjetas{
-      display: inherit;
-    }
-    ul{
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+    .list-group-item{
+      background: 0;
+      border-color: $turquesa-500;
+      border: 1px 0;
 
-    li{
-      line-height: 1.6em;
     }
-    li.muted{
-      margin-top: 5px;
-      padding-top: 4px;
+    .list-group-item .small{
+      line-height: 3;
     }
-
     @media#{$lg-screen} {
-      #carouselEstrellas{
-        height: 360px;
-      }
 
       }
-    }
-
-
-
+}
 
 .decoracion{
   position: relative;
   .petalos{
     position: absolute;
     width: 100%;
-    background: url('../img/bg-seccion.png');
+    background: url('../img/bg-seccion-2.png');
     @include background-cover;
     height: 580px;
     top: -120px;

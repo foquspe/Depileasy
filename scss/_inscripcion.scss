@@ -2,7 +2,18 @@
 section.inscripcion {
     background: $turquesa-300 url('../img/img-petalos.png') no-repeat bottom right ;
 
+    .list-unstyled img{
+      width: 24px;
+    }
 
+    h4{
+      color: $turquesa-900;
+    }
+
+    a{
+      color: $gris-900;
+      text-decoration: underline $turquesa-500;
+    }
 
     form{
       background-color: $turquesa-500;
@@ -16,26 +27,28 @@ section.inscripcion {
       }
     }
 
-
     .btn-fill{
       background-color: $turquesa-900;
       color: white;
       margin-left: 5px;
     }
+
     .birthday{
       max-width: 50px;
       display: inline-block;
     }
+
     p.small{
       color: $turquesa-50;
       margin-top: 20px;
     }
+
     p.small a{
       color: white;
       font-weight: bold;
       text-decoration: underline;
-
     }
+
     h2 {
         margin-top: 40px;
         margin-bottom: 25px;
@@ -44,41 +57,45 @@ section.inscripcion {
             color: $brand-google-plus;
         }
     }
+
     ul.list-social {
-        margin-bottom: 0;
+        $list-inline-item-color:$turquesa-50;
         li {
             a {
-                font-size: 40px;
-                line-height: 80px;
                 display: block;
-                width: 80px;
-                height: 80px;
-                color: white;
-                border-radius: 100%;
+                background: red center no-repeat;
+                width: 40px;
+                height: 40px;
             }
-            &.social-twitter {
+            &.social-whatsapp {
                 a {
-                    background-color: $brand-twitter;
-                    &:hover {
-                        background-color: darken($brand-twitter, 5%);
-                    }
+                    background: url('data:image/svg+xml;utf8,
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M100 48.7c0 26.9-22 48.7-49.1 48.7-8.6 0-16.7-2.2-23.7-6.1L0 100l8.9-26.1c-4.5-7.3-7-16-7-25.1C1.8 21.8 23.8 0 50.9 0S100 21.8 100 48.7zM50.9 7.8c-22.8 0-41.3 18.4-41.3 41 0 9 2.9 17.3 7.9 24L12.3 88l15.9-5c6.5 4.3 14.3 6.8 22.7 6.8 22.8 0 41.3-18.4 41.3-41 0-22.7-18.5-41-41.3-41zm24.8 52.1c-.3-.5-1.1-.8-2.3-1.4-1.2-.6-7.1-3.5-8.2-3.9-1.1-.4-1.9-.6-2.7.6-.8 1.2-3.1 3.9-3.8 4.7-.7.8-1.4.9-2.6.3-1.2-.6-5.1-1.9-9.7-5.9-3.6-3.2-6-7.1-6.7-8.3-.7-1.2-.1-1.8.5-2.4.5-.5 1.2-1.4 1.8-2.1.6-.7.8-1.2 1.2-2 .4-.8.2-1.5-.1-2.1-.3-.6-2.7-6.5-3.7-8.9-1-2.4-2-2-2.7-2-.7 0-1.5-.1-2.3-.1-.8 0-2.1.3-3.2 1.5S27 32 27 37.9s4.3 11.6 4.9 12.3c.6.8 8.3 13.2 20.6 18 12.2 4.8 12.2 3.2 14.4 3 2.2-.2 7.1-2.9 8.1-5.7 1-2.7 1-5.1.7-5.6z" fill="#{$list-inline-item-color}"/></svg>');
                 }
+            }
+            &.social-messenger {
+              a {
+                    background: url('data:image/svg+xml;utf8,
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 0C3.582 0 0 3.317 0 7.407a7.2 7.2 0 0 0 2.981 5.768V16l2.724-1.495a8.616 8.616 0 0 0 2.295.31c4.418 0 8-3.316 8-7.407S12.418 0 8 0zm.8 9.975L6.758 7.8 2.783 9.975l4.372-4.642 2.087 2.173 3.926-2.173L8.8 9.975z" fill="#{$list-inline-item-color}" fill-rule="evenodd"/></svg>');
+                }
+              }
+            &.social-instagram {
+              a {
+                    background: url('data:image/svg+xml;utf8,
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><style>.st0{fill:#{$list-inline-item-color}}</style><path class="st0" d="M70.2 0H29.8C13.4 0 0 13.4 0 29.8v40.4C0 86.6 13.4 100 29.8 100h40.4c16.4 0 29.8-13.4 29.8-29.8V29.8C100 13.4 86.6 0 70.2 0zm19.7 70.2c0 10.9-8.8 19.7-19.7 19.7H29.8c-10.9 0-19.7-8.8-19.7-19.7V29.8c0-10.9 8.8-19.7 19.7-19.7h40.4c10.9 0 19.7 8.8 19.7 19.7v40.4z"/><path class="st0" d="M50 24.1c-14.3 0-25.9 11.6-25.9 25.9S35.7 75.9 50 75.9 75.9 64.3 75.9 50 64.3 24.1 50 24.1zm0 41.7c-8.7 0-15.8-7.1-15.8-15.8S41.3 34.2 50 34.2c8.7 0 15.8 7.1 15.8 15.8 0 8.7-7.1 15.8-15.8 15.8z"/><circle class="st0" cx="75.9" cy="24.3" r="6.2"/></svg>');
+              }
             }
             &.social-facebook {
-                a {
-                    background-color: $brand-facebook;
-                    &:hover {
-                        background-color: darken($brand-facebook, 5%);
-                    }
-                }
+              a {
+                    background: url('data:image/svg+xml;utf8,
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M86.5 0h-73C6 0 0 6 0 13.5v73C0 94 6 100 13.5 100h36l.1-35.7h-9.3c-1.2 0-2.2-1-2.2-2.2V50.6c0-1.2 1-2.2 2.2-2.2h9.3V37.2c0-12.9 7.9-19.9 19.4-19.9h9.5c1.2 0 2.2 1 2.2 2.2v9.7c0 1.2-1 2.2-2.2 2.2h-5.8c-6.3 0-7.5 3-7.5 7.3v9.6H79c1.3 0 2.3 1.1 2.2 2.4l-1.4 11.5c-.1 1.1-1.1 1.9-2.2 1.9H65.2l-.1 35.9h21.4c7.4 0 13.5-6 13.5-13.5v-73C100 6 94 0 86.5 0z" fill="#{$list-inline-item-color}"/></svg>');
+              }
             }
-            &.social-google-plus {
-                a {
-                    background-color: $brand-google-plus;
-                    &:hover {
-                        background-color: darken($brand-google-plus, 5%);
-                    }
-                }
+            &.social-youtube {
+              a {
+                    background: url('data:image/svg+xml;utf8,
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M85.6 14.6H14.4C6.4 14.6 0 21 0 29v42c0 8 6.4 14.4 14.4 14.4h71.3C93.6 85.4 100 79 100 71V29c0-8-6.4-14.4-14.4-14.4zM65.2 51.4l-27.3 13c-.7.3-1.6-.2-1.6-1V36.6c0-.8.9-1.3 1.6-1l27.3 13.9c.8.4.8 1.5 0 1.9z" fill="#{$list-inline-item-color}"/></svg>');
+              }
             }
         }
     }
