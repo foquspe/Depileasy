@@ -8,7 +8,7 @@ Creada en base a [Bootstrap](http://getbootstrap.com/), un framework creado por 
 
 Agencia: Foqus
 Sitio Web: http://foqus.pe
----
+País: Perú
 Dirección Creativa Digital: Dumas Ayala
 Dirección de Arte: Romanet Castillo
 Diseño Gráfico: Stefany Escudero
