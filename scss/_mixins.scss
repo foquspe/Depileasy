@@ -1,14 +1,9 @@
 // Mixins
 @mixin transition-all() {
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
     transition: all .35s;
 }
 
 @mixin background-cover() {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -63,19 +58,13 @@
 }
 
 @mixin heading-font {
-    font-family: 'Dosis', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'Dosis', 'sans-serif';
     font-weight: 700;
     letter-spacing: 0.10em;
     text-transform: uppercase;
 }
 
 @mixin body-font {
-    font-family: 'PT Sans', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: 'PT Sans', 'sans-serif';
     line-height: 1;
 }
-
-// @mixin alt-font {
-//     font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-//     letter-spacing: 2px;
-//     text-transform: uppercase;
-// }

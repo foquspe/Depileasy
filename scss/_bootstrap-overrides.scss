@@ -1,12 +1,4 @@
-// Bootstrap overrides for this template
-.bg-primary {
-    background: $theme-primary;
-}
-
-.text-primary {
-    color: $theme-secondary;
-}
-
+// Bootstrap overrides
 .no-gutter > [class*='col-'] {
     padding-right: 0;
     padding-left: 0;
@@ -32,12 +24,14 @@ i.icon{
   display:inline-block;
   vertical-align: middle;
 }
+
 .messenger{
   background: url('../img/icon-messenger.svg');
   height: 16px;
   width: 16px;
   margin-left: 4px;
 }
+
 .foqus{
   background: url('../img/icon-foqus.svg');
   height: 16px;
@@ -67,19 +61,9 @@ i.icon{
   padding: 10px 20px;
 }
 
-label{
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: $turquesa-50;
-}
-
-
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-image: none;
-
 }
 
 .carousel-control-next-icon:after
@@ -87,8 +71,8 @@ label{
   content: '›';
   font-size: 55px;
   color: $turquesa-500;
-  @media #{$sm-screen} {
 
+  @media #{$sm-screen} {
       display: none;
   }
 }
@@ -98,7 +82,6 @@ label{
   font-size: 55px;
   color:  $turquesa-500;
   @media #{$sm-screen} {
-
       display: none;
   }
 }

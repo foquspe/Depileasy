@@ -12,7 +12,7 @@ var browserSync = require('browser-sync').create();
 var banner = ['/*!\n',
   ' * Foqus - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
   ' * Copyright 2018-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Todos los derechos reservados <%= pkg.license %> (https://github.com/foquspe/<%= pkg.name %>/blob/master/LICENSE)\n',
+  ' * Todos los derechos reservados (https://github.com/foquspe/<%= pkg.name %>/blob/master/LICENSE)\n',
   ' */\n',
   '\n'
 ].join('');
@@ -28,12 +28,6 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/bootstrap'))
 
-  // Font Awesome 5
-  gulp.src([
-      './node_modules/@fortawesome/**/*'
-    ])
-    .pipe(gulp.dest('./vendor'))
-
   // jQuery
   gulp.src([
       './node_modules/jquery/dist/*',
@@ -47,17 +41,6 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor/jquery-easing'))
 
-  // Simple Line Icons
-  gulp.src([
-      './node_modules/simple-line-icons/fonts/**',
-    ])
-    .pipe(gulp.dest('./vendor/simple-line-icons/fonts'))
-
-  gulp.src([
-      './node_modules/simple-line-icons/css/**',
-    ])
-    .pipe(gulp.dest('./vendor/simple-line-icons/css'))
-
 });
 
 // Compile SCSS
@@ -67,7 +50,15 @@ gulp.task('css:compile', function() {
       outputStyle: 'expanded'
     }).on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
+      browsers: [
+        'last 2 versions',
+        'ie >= 9',
+        'firefox >= 14',
+        'safari >= 5',
+        'opera >= 12',
+        'ios >= 6',
+        'android >= 4'
+      ],
       cascade: false
     }))
     .pipe(header(banner, {

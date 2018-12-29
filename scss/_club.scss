@@ -1,4 +1,4 @@
-// Styling for the call to action section
+// Estilos para Club
 section.club {
     background-color: $turquesa-300;
 
@@ -14,11 +14,9 @@ section.club {
       background: 0;
       border-color: $turquesa-500;
       border: 1px 0;
+      line-height: 1.2;
+    }
 
-    }
-    .list-group-item .small{
-      line-height: 3;
-    }
     @media#{$lg-screen} {
 
       }

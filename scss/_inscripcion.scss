@@ -1,4 +1,4 @@
-// Styling for the download section
+// Estilos para Inscripción
 section.inscripcion {
     background: $turquesa-300 url('../img/img-petalos.png') no-repeat bottom right ;
 
@@ -59,7 +59,7 @@ section.inscripcion {
     }
 
     ul.list-social {
-        $list-inline-item-color:$turquesa-50;
+        $list-inline-item-color:rgb(255, 255, 255);
         li {
             a {
                 display: block;

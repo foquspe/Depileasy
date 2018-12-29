@@ -20,10 +20,10 @@
     ],
     "homepage": "http://depileasy.club",
     "bugs": {
-        "url": "https://github.com/foquspe",
+        "url": "https://github.com/foquspe/Depileasy",
         "email": "bugs@foqus.pe"
     },
-    "license": "MIT",
+    "license": "UNLICENSED",
     "author": "Foqus",
     "contributors": [
         "Dumas Ayala (http://be.net/Dumas/)"
